@@ -1,4 +1,8 @@
-##### Dialogu Management는 무엇인가? https://tutorials.botsfloor.com/dialog-management-799c20a39aad 공부
+
+
+
+
+##### Dialog Management는 무엇인가? https://tutorials.botsfloor.com/dialog-management-799c20a39aad 공부
 
 ##### Intents - 의지, 의향이라는 사전적 의미를 가졌고 입력되는 글들이 어떠한 방향으로 해석이 되었으면 하는지에 대해서 알려주는 부분
 ##### Entity - 한건의 자료를 구성하는 레코드 하나
@@ -34,3 +38,18 @@
 
 ##### Belief based
 ##### NLU는 완벽하게 동작하지 않는다. 대부분의 NLU는 일정 정도의 불확실성으로 intent와 entity를 분류한다. 이는 NLU는 구체적인 규칙보다는 beliefs에 의해 추측됨을 의미한다. 시스템이 복잡해질수록 NLU는 잘못된 해석을 할 가능성이 높으며 Dialouge Management는 belief에 따라 동작되어야 한다.
+
+
+##### 위키(https://en.wikipedia.org/wiki/Dialog_manager)
+##### DM으로의 input은 사람이 입력하고 이는 NLU 구성 요소에 의한 시스템 특정 의미 표현으로 반환된다. ##### DM은 state 변수를 가지고 있는데 그 변수에는 가령 대화 기록, 가장 최근에 대답하지 않은 질문 등등이 저장된다.
+##### DM의 output은 dialog system의 다른 부분에 대한 명령 목록으로 일반적으로 의미론적인 표현으로 구성되어 있으며 이는 Natural language generation(NLG)에 의해 사람의 언어로 변환된다.
+
+##### 다양한 DM이 있고 심지어 하나의 dialog system에 여러개의 DM이 있는 경우도 있다. 하지만 모든 DM에 공통적으로 적용되는 부분은 그것들이 상태 기반이라는 것이다. DM은 대략적으로 다음과 같이 구분이 된다.
+
+##### 1. Input-control DM
+##### 2. Output-control DM
+##### 3. Strategic flow-control
+##### - Hierarchical structure : 대화 모듈 스택 유지, 코드 재사용 가능, 백엔드에서 선택된 정보를 기반으로 즉각적으로 구축되는 동적 대화 작업을 허용
+##### - Topic Tracking : 사용자가 주제를 정해주면 챗봇이 말하는 형태, 사용자는 OK, right 등의 수동적인 대답을 한다.
+##### - Form Filling : 챗봇이 특정 정보를 요구하면 사용자가 그 특정정보를 다 얘기하는 형태, 가장 대표적인게 system-initiative인데 챗봇이 정보요구 - 사용자가 대답 이런 형태이다. slot의 order에 따라 사용자가 대답하지 않을 경우 챗봇은 이를 저장해두었다가 그것에 대해 더 묻지 않는다.
+##### 4. Tactic flow-control
