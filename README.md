@@ -1,6 +1,6 @@
 
 ## Dialog Management는 무엇인가? 
-#####https://tutorials.botsfloor.com/dialog-management-799c20a39aad 공부
+##### https://tutorials.botsfloor.com/dialog-management-799c20a39aad 공부
 
 > ##### Intents - 의지, 의향이라는 사전적 의미를 가졌고 입력되는 글들이 어떠한 방향으로 해석이 되었으면 하는지에 대해서 알려주는 부분
 > ##### Entity - 한건의 자료를 구성하는 레코드 하나
