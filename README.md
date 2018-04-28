@@ -51,4 +51,10 @@
 ##### - Hierarchical structure : 대화 모듈 스택 유지, 코드 재사용 가능, 백엔드에서 선택된 정보를 기반으로 즉각적으로 구축되는 동적 대화 작업을 허용
 ##### - Topic Tracking : 사용자가 주제를 정해주면 챗봇이 말하는 형태, 사용자는 OK, right 등의 수동적인 대답을 한다.
 ##### - Form Filling : 챗봇이 특정 정보를 요구하면 사용자가 그 특정정보를 다 얘기하는 형태, 가장 대표적인게 system-initiative인데 챗봇이 정보요구 - 사용자가 대답 이런 형태이다. slot의 order에 따라 사용자가 대답하지 않을 경우 챗봇은 이를 저장해두었다가 그것에 대해 더 묻지 않는다.
-##### 4. Tactic flow-control
+##### - Information state : 무엇인지 잘 모르겠다. input과 state에 따라 새로운 state를 적용할 수 있다는 내용인거 같은데...
+##### - General Planning : 위의 Goal-based와 비슷한 내용인듯... 먼저 goal을 설정하게 하고 그 goal에 도달하기 위한 plan을 설정한 후 operation을 이룬다. 각 operation은 preconditions와 postconditions로 이루어져 있다. 
+##### 4. Tactic flow-control - 몇몇 DM의 경우 대화의 구조와 목표 뒤에 전략적인 대화 결정을 내리는데 이는 대화의 질에 영향을 미친다.
+##### - Error handling
+##### - Initiative control
+##### - Pedagogical decisions
+##### - Learned tactics
